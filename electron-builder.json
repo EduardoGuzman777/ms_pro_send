@@ -1,0 +1,30 @@
+{
+  "appId": "com.ninjatech.msprosend",
+  "productName": "MS Pro Send",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "build/**/*",
+    "main.js",
+    "preload.js",
+    "package.json",
+    "src/main/modules/**/*"
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "public/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "extraResources": [
+    {
+      "from": "src/main/modules/",
+      "to": "modules/"
+    }
+  ]
+}

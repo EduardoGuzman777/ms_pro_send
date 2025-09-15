@@ -1,0 +1,52 @@
+{
+  "name": "ms-pro-send",
+  "version": "1.0.0",
+  "description": "Professional multi-channel marketing automation desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently &quot;npm run react-start&quot; &quot;npm run electron-start&quot;",
+    "react-start": "react-scripts start",
+    "electron-start": "electron .",
+    "build": "npm run react-build && npm run electron-build",
+    "react-build": "react-scripts build",
+    "electron-build": "electron-builder"
+  },
+  "author": "NinjaTech AI",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "better-sqlite3": "^8.4.0",
+    "papaparse": "^5.4.1",
+    "xlsx": "^0.18.5",
+    "googleapis": "^126.0.0",
+    "serialport": "^12.0.0",
+    "twilio": "^4.12.0",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "chart.js": "^4.3.0",
+    "react-chartjs-2": "^5.2.0"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "concurrently": "^8.2.0",
+    "electron-builder": "^24.4.0"
+  },
+  "build": {
+    "appId": "com.ninjatech.msprosend",
+    "productName": "MS Pro Send",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "public/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
