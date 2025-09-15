@@ -1,4 +1,8 @@
 # MS Pro Send
+⚠️ Note:
+MS Pro Send is currently under development and not yet fully operational. Developers with the expertise to implement the remaining functional modules and enhance the software are highly encouraged to contribute.
+
+📩 Interested contributors, please contact: mm.xihab@gmail.com
 
 A professional desktop application for multi-channel marketing automation (Email, WhatsApp, SMS) with contact management, campaigns, templates, automation rules, and logs.
 
