@@ -87,7 +87,7 @@ A professional desktop application for multi-channel marketing automation (Email
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/ms-pro-send.git
+   git clone https://github.com/md-muntasir-shihab/ms-pro-send.git
    cd ms-pro-send
    ```
 
